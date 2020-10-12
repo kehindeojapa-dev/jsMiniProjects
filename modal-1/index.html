@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Simple pop-up dialog box, containing a form -->
+    <dialog id="modal">
+        <div>
+            <img src="broken_controller.jpg" alt="gamepad">
+        </div>
+        <div id="info">
+            <div class="close_btn">
+            </div>
+            <h3>
+                Ideas and free components in your inbox
+            </h3>
+            <p>
+                Sign up to receive ideas, free components and free resources plus 15% on all of our pro gamer kits.
+            </p> 
+            <form method="dialog">
+                <input type="email" name="email" id="email" placeholder="Email address">
+                <button type="submit" class="sub_btn">Subscribe</button>
+                <p>No spams included</p>
+            </form>
+        </div>
+        
+    </dialog>
+
+    <menu>
+        <button id="openModal">Click to see modal</button>
+    </menu>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
