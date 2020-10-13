@@ -1,0 +1,143 @@
+/* 
+    Global Settings
+*/
+:root {
+    --color1: #171732;
+    --color2: #E3A270;
+    --color3: #656178;
+    --color4: #848495;
+    --color5: #847C94;
+    --color6: #4C4C68;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--color1);
+}
+
+/*
+    Modal Styling
+*/
+.modal {
+    background: #2c2c58;
+    border: none;
+    border-radius: 5px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative;
+}
+
+.modal h3, .modal p, .modal h5 {
+    color: #fff;
+}
+
+p#apply {
+    font-size: 0.7rem;
+    margin-top: -0.7rem;
+    margin-bottom: -0.5rem;
+}
+
+.checkbox_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: -2rem;
+}
+
+.checkbox_container h5 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.checkbox_container p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: -1rem;
+    margin-left: 0.5rem;
+}
+
+p#else {
+    margin-top: 3rem;
+    margin-bottom: -0.1rem;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    width: 70%;
+    height: 80px;
+    background: var(--color1);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    outline: none;
+}
+
+textarea::placeholder {
+    padding: 10px 0 0 15px;
+}
+
+.modal button {
+    display: block;
+    margin-top: 1rem;
+    width: 35%;
+    background-color: var(--color2);
+    border: none;
+    padding: 1rem;
+    color: var(--color1);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.modal button:hover {
+    background-color: #ec7b25;
+}
+
+/* 
+    Close_ button style
+*/
+
+.close_btn_container {
+    background: #363675;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+.close_btn_container:hover {
+    background-color: #5454aa;
+}
+.close_btn {
+    position: absolute;
+    top: 1rem;
+    right: 0.8em;
+    height: 2px;
+    width: 25px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+
+
+.close_btn::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top:0px;
+    width: 25px;
+    height: 2px;
+    background: inherit;
+    transform: rotate(90deg);
+    cursor: pointer;
+}

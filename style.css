@@ -84,11 +84,11 @@ header h2 {
     color: #fff;
     text-decoration: none;
     padding: 0.4em;
-    background-color: rgb(92, 196, 92);
+    background-color: #1b0d2496;
     border-radius: 5px;
 }
 
 .card footer a:hover {
-    color: #555;
-    background-color: lightgreen;
+    color: #fff;
+    background-color: #1b0d24de;
 }

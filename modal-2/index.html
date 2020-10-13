@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal-2</title>
+</head>
+
+<body>
+
+    <menu>
+        <button id="openModal">Click to see modal</button>
+    </menu>
+
+    <!-- Simple pop-up dialog box containing a form -->
+
+    <dialog class="modal">
+        <div class="close_btn_container" id="close_btn">
+            <div class="close_btn"></div>
+        </div>
+        <form method="dialog">
+            <h3>Whats's happening?</h3>
+            <p id="apply">Check all that apply.</p>
+            <div class="checkbox_container">
+                <input type="checkbox" id="problem" name="" value="problem">
+                <label for="problem">
+                    <h5>Video Problem</h5>
+                    <p>Blurry, cuts out, or look strange in some way</p>
+                </label>
+            </div>
+            <div class="checkbox_container">
+                <input type="checkbox" id="problem" name="" value="problem">
+                <label for="problem">
+                    <h5>Sound Problem</h5>
+                    <p>Hard to hear, not matched with sound, misspellings, or poor translations.</p>
+                </label>
+            </div>
+            <div class="checkbox_container">
+                <input type="checkbox" id="problem" name="" value="problem">
+                <label for="problem">
+                    <h5>Substitles or caption Problem</h5>
+                    <p>Missing, hard to read, not matched with sound, misspellings, or poor translations.</p>
+                </label>
+            </div>
+
+            <p id="else">It's something else</p>
+            <div class="message-container">
+                <textarea name="" id="report" placeholder="Let us know whats's going on"></textarea>
+                <button type="submit" id="sub_btn">Submit Report</button>
+            </div>
+            
+        </form>
+    </dialog>
+
+    
+
+    <div id="output"></div>
+
+    <!-- Script -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
