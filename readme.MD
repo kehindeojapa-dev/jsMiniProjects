@@ -8,4 +8,14 @@
 # Modal-1 
 
 modal design from gotten from UI design daily
-![insure LP](./images/insurelp/insurelp.png)
+![modal UI](./modal-1/modal-1.png)
+
+# Modal-2 
+
+modal design from gotten from UI design daily
+![modal UI](./modal-2/modal-2.png)
+
+# Todo-1 
+
+Todo app design from gotten from UI design daily, app can assign new tasks, check if task is done or not. and tasks can be deleted(finished or not).
+![todo UI](./todo-1/modal-1.png)

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do Lists</title>
+</head>
+<body>
+    <main class="todoApp">
+        <header>
+            <h2 class="date-container"></h2>
+            <p class="numOfTasks"></p>
+        </header>
+        <div class="todo-container">
+            <ul class="todo-items"></ul>
+        </div>
+        <form>
+            <div class="enterTodo-container">
+                <button class="enterTodo">+</button>
+            </div>
+            <div class="addTodo-container off-display">
+                <input type="text" id="to-do-input" autofocus>
+                <button class="to-do-submit"><i class="fas fa-plus-square"></i></button>
+            </div>
+        </form>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
