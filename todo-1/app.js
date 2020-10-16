@@ -38,7 +38,6 @@ todoInput.addEventListener('keydown', event => {
         addTodoContainer.classList.add('off-display');
         todoInput.value = '';
     }
-    console.log(event.key);
 });
 todoList.addEventListener('click', checked);
 
