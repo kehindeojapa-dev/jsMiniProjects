@@ -17,5 +17,11 @@ modal design from gotten from UI design daily
 
 # Todo-1 
 
-Todo app design from gotten from UI design daily, app can assign new tasks, check if task is done or not. and tasks can be deleted(finished or not).
-![todo UI](./todo-1/modal-1.png)
+Todo app design from gotten from UI design daily, app can assign new tasks, check if task is done or not.
+![todo UI](./todo-1/todo-1.png)
+
+# Todo-2 
+
+Todo app design from gotten from UI design daily, app can assign new tasks, hide or show resolved task.
+![todo UI](./todo-1/todo-1.png)
+

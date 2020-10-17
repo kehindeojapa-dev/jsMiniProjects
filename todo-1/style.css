@@ -153,3 +153,8 @@ button.to-do-submit:focus {
 .fas {
     pointer-events: none;
 }
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
