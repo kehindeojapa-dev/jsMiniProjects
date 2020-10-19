@@ -5,6 +5,7 @@ const todoList = document.querySelector('.todo-lists');
 const deleteList = document.querySelector('.del-list');
 const showBtn = document.querySelector('#show');
 const hideBtn = document.querySelector('#hide');
+const noTask = document.querySelector('.noTask');
 
 //  EVENT LISTENERS
 
@@ -33,8 +34,8 @@ todoInput.addEventListener('keydown', (e) => {
 
 deleteList.addEventListener('click', toggleStar);
 todoList.addEventListener('click', taskDone);
-showBtn.addEventListener('click', display);
-hideBtn.addEventListener('click', display)
+showBtn.addEventListener('click', displayShow);
+hideBtn.addEventListener('click', displayHide)
 
 
 
@@ -147,11 +148,6 @@ function taskDone(e){
         //Append created todoDiv to todoList
         deleteList.appendChild(todoDiv);
 
-
-        // Show resolved task
-        if(deleteList.children.length > 0) {
-            hideBtn.classList.remove('off-display');
-        }
     }
     
 }
@@ -163,8 +159,25 @@ function taskDone(e){
     hides the deleted todoitems and can do this in
     reverse
 */
-function display() {
-    showBtn.classList.toggle('off-display');
-    hideBtn.classList.toggle('off-display');
-    deleteList.classList.toggle('off-display')
+
+// Show resolved task
+
+
+
+function displayHide() {
+    showBtn.classList.remove('off-display');
+    hideBtn.classList.add('off-display');
+    deleteList.classList.add('off-display')
+}
+
+function displayShow() {
+    if (deleteList.children.length == 0){
+        noTask.classList.toggle('off-display');
+    } else {
+        noTask.classList.add('off-display');
+        showBtn.classList.toggle('off-display');
+        hideBtn.classList.toggle('off-display');    
+        deleteList.classList.toggle('off-display');
+    }
+    
 }
