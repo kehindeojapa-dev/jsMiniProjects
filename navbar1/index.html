@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Navbar1</title>
+</head>
+<body>
+    <button class="openBtn">
+        <i class="fas fa-hamburger"></i>
+    </button>
+    <nav class="sideBar">
+        <button class="closeBtn">X</button>
+        <div class="listHolder">
+            <a href="#"><button><i class="fab fa-windows"></i></button>Overview</a>
+            <a href="#"><button><i class="fas fa-calendar-alt"></i></button>Calendar</a>
+            <a href="#"><button><i class="fas fa-user"></i></button>Users</a>
+            
+            <a href="#" class="project"><button><i class="fas fa-folder-open"></i></button>Project<button class="arrow"><i class="fas fa-angle-right"></i></button></a>
+            <div class="propProject off-display">
+                <ul>
+                    <li>Side-project</li>
+                    <li>Mini-Project</li>
+                    <li>Outsourced Project</li>
+                </ul>
+            </div>
+            <a href="#"><button><i class="fas fa-list"></i></button>Tasks</a>
+            <a href="#"><button><i class="fas fa-user-circle"></i></button>My tasks</a>
+    
+        </div>
+        <footer>
+            <a href="#">
+                <button>
+                    <i class="fas fa-power-off"></i>
+                </button>
+                Log Out
+            </a>
+        </footer>
+    </nav>
+
+    <script src="./app.js"></script>
+</body>
+</html>

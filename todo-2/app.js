@@ -148,6 +148,9 @@ function taskDone(e){
         //Append created todoDiv to todoList
         deleteList.appendChild(todoDiv);
 
+        if (deleteList.children.length > 0){
+            noTask.classList.add('off-display');
+        }
     }
     
 }

@@ -1,0 +1,134 @@
+/*  Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #B47EE1;
+    --color2: #FAF4FB;
+    --color3: #9442AE;
+}
+body {
+    font-family: Alegreya Sans, sans-serif;
+    min-height: 100vh;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+
+/* Main Styling */
+.off-display {
+    display: none;
+}
+button {
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.openBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: var(--color3);
+    color: var(--color2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.openBtn:hover {
+    background-color: var(--color1);
+}
+
+.sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: var(--color1);
+    width: 200px;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+.sideBar.active {
+    transform: translateX(0);
+}
+.closeBtn {
+    position: relative;
+    top: 1rem;
+    left: 0rem;
+    background: inherit;
+    color: var(--color2);
+    padding: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.closeBtn:hover {
+    background-color: var(--color3);
+}
+.listHolder {
+    margin-top: 2rem;
+}
+
+.sideBar button {
+    background: inherit;
+    color: #fff;
+    font-size: 1rem;
+    padding-right: 0.7rem;
+}
+
+.sideBar a {
+    display: flex;
+    width: 100%;
+    /* margin: 1rem 0rem; */
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    transition: all 0.2s ease-in;
+}
+
+.sideBar a:hover {
+    background: var(--color3);
+}
+.sideBar .arrow {
+    cursor: pointer;
+    margin-left: 4rem;
+    color: var(--color2);
+    font-size: 0.9rem;
+}
+
+.sideBar footer {
+    position: absolute; 
+    bottom: 0;
+}
+
+.propProject ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.propProject li {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.bgDarkPurple {
+    background-color: var(--color3);
+}
+
+/* .content {
+    content: "<i class='fas fa-angle-down'></i>";
+} */
