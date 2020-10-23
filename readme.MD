@@ -32,5 +32,10 @@ Navbar(off-side canvas), sidebar isn't visible until the hamburger icon is click
 
 ## Carousel-1
 
-Carousel containing images, with side buttons for displaying previous or next image. 
-![todo UI](./navbar1/nav-1.png)
+Carousel containing images, with side buttons for displaying previous or next image. Also, the carousel runs infinitely.
+![todo UI](./carousel1/../carousel-1/images/carousel1.png);
+
+
+## Gallery1 
+
+Collections of images, when an image is clicked, it can see in its original form, can be closed, and slider options are available.

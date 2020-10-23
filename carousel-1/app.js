@@ -1,63 +1,85 @@
 // Selectors
-img = document.querySelector('.image-container');
-images = document.querySelectorAll('.image-container img');
-leftBtn = document.querySelector('.leftBtn');
-rightBtn = document.querySelector('.rightBtn');
+const img = document.querySelector('.image-container');
+let images = document.querySelectorAll('.image-container img');
+const leftBtn = document.querySelector('.leftBtn');
+const rightBtn = document.querySelector('.rightBtn');
+let interval = 4000;
 
 // EventListener
+img.addEventListener('mouseenter', ()=> {
+    clearInterval(run);
+});
+img.addEventListener('mouseleave', ()=> {
+    runCarousel();
+});
 leftBtn.addEventListener('click', moveLeft);
-rightBtn.addEventListener('click', moveright)
+rightBtn.addEventListener('click', moveright);
 
 // Function
-let index = 0;
-let indexPx = 0;
+let index = 1;
+let run;
+
+
+//create dummyClones
+const firstClone = images[0].cloneNode(true);
+const lastClone = images[images.length-1].cloneNode(true);
+firstClone.id = 'first-clone';
+lastClone.id = 'last-clone';
+img.prepend(lastClone);
+img.append(firstClone);
+
+
+
+let slides = getSlides();
+const slidewidth = slides[index].clientWidth;
+img.style.transform = `translateX(${-slidewidth * index}px)`;
+
+
+
+function getSlides() {
+    return document.querySelectorAll('.image-container img');
+}
 
 function runCarousel() {
-    
-
-    index++;
-    if(index > images.length - 1) {
-        index = 0;
-    }
-    indexPx = (index * 500);
-    console.log(index)
-    img.style.transform = `translateX(${-index * 500}px)`;
+    run = setInterval(()=> {
+        index++;
+        img.style.transform = `translateX(${-slidewidth * index}px)`;
+        img.style.transition = '0.7s';
+    }, interval)
 }
+
+
+//Make slider an infinite loop;
+
+img.addEventListener('transitionend', ()=> {
+    slides = getSlides();
+    if(slides[index].id === firstClone.id) {
+        img.style.transition = 'none';
+        index = 1;
+        img.style.transform = `translateX(${-slidewidth * index}px)`;
+    }
+    if(slides[index].id === lastClone.id) {
+        img.style.transition = 'none';
+        index = images.length - 1;
+        img.style.transform = `translateX(${-slidewidth * index}px)`;
+    }
+});
 
 
 function moveLeft() {
-    // clearInterval(run)
-    switch(indexPx) {
-        case 0:
-            result = '-2000px';
-            break;
-        case 500:
-            result = '-0px';
-            break;
-        case 1000:
-            result = '-500px';
-            break;
-        case 1500:
-            result = '-1000px';
-            break;
-        case 2000:
-            result = '-1500px';
-            break;
-    }
-    console.log(images[index])
-    console.log(result);
-    img.style.transform = `translateX(${result})`;
+    if (index <= 0) return;
     index--;
-    // setInterval(runCarousel, 4000);
-    clearInterval(run);
+    img.style.transform = `translateX(${-slidewidth * index}px)`;
+    img.style.transition = '0.7s';
 }
 
 function moveright() {
-    let index = 0;
-    img.style.transform = `translateX(${-index * 500 - 500}px)`;
+    slides = getSlides();
+    if (index >= slides.length-1) return;
+    index++;
+    img.style.transform = `translateX(${-slidewidth * index}px)`;
+    img.style.transition = '0.7s';
 }
 
-let run = setInterval(() => {
-    runCarousel();
-}, 4000)
+runCarousel();
 // setInterval(runCarousel, 4000);
