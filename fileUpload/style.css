@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #202847;
+    --color2: #f572b0;
+    --color3: #6a7090;
+    --color4: rgba(17, 15, 19, 0.267);
+}
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, cursive, sans-serif;
+}
+
+.form-container {
+    background: var(--color1);
+    margin: 2rem 1rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.form-container .main-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+label {
+    display: block;
+    font-size: 0.55rem;
+    margin-top: 0.7rem;
+}
+
+input {
+    height: 2rem;
+    background: var(--color1);
+    border: 1px solid var(--color4);
+    border-radius: 3px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid var(--color2);
+}
+.inputs-left {
+    margin: 0 2rem 0 auto;
+    /* margin-right: auto; */
+}
+
+textarea {
+    resize: none;
+    background: var(--color1);
+    border-color: var(--color4);
+    border-radius: 3px;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--color2);
+}
+textarea::placeholder {
+    font-size: 0.6rem;
+    padding: 0.4rem;
+}
+
+input::placeholder {
+    font-size: 0.55rem;
+    padding: 0rem 0.3rem;
+}
+.inputs-right input{
+    width: 70%;
+}
+select{
+    width: 70%;
+    background: var(--color1);
+    border: 1px solid var(--color4);
+    border-radius: 3px;
+    color: #fff;
+    height: 2rem;
+    font-size: 0.8rem;
+}
+select:focus{
+    outline: none;
+    border: 1px solid var(--color2);
+}
+
+.file {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+}
+
+input[type="file"]{
+    background: transparent;
+    height: 1.5rem;
+}
+
+.file p {
+    font-size: 0.55rem;
+    margin: 0.3rem auto;
+}
+
+.form-container button {
+    display: block;
+    margin: 1.5rem auto 4rem;
+    padding: 0.6rem 6rem;
+    background: var(--color2);
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    letter-spacing: 0.05rem;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #df4f92;
+}
+
+.form-container button:focus {
+    outline: none;
+}
+
+.errorText {
+    background: rgb(155, 17, 17, 0.3);
+    font-size: 0.7rem;
+    text-align: center;   
+}
+
+#tagError,#softwareError, #dateError {
+    width: 70%;
+}
+
+#thumbError, #sourceError {
+    width: 80%;
+    margin: 0 -0rem;
+}

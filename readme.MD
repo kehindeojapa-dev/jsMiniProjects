@@ -28,14 +28,24 @@ Todo app design from gotten from UI design daily, app can assign new tasks, hide
 ## Navbar(Off-Side canvas)
 
 Navbar(off-side canvas), sidebar isn't visible until the hamburger icon is clicked, design gotten from UI design daily.
-![todo UI](./navbar1/nav-1.png)
+![Navbar UI](./navbar1/nav-1.png)
 
 ## Carousel-1
 
 Carousel containing images, with side buttons for displaying previous or next image. Also, the carousel runs infinitely.
-![todo UI](./carousel1/../carousel-1/images/carousel1.png);
+![Carousel UI](./carousel1/../carousel-1/images/carousel1.png);
 
 
 ## Gallery1 
 
-Collections of images, when an image is clicked, it can see in its original form, can be closed, and slider options are available.
+Collections of images, when an image is clicked, it appears in a bigger form for better viewing experience,and the image can be closed.
+![Gallery UI](./gallery1/images/gallery1.png);
+
+
+## File Upload
+
+Simple form that uploads file plus checks for some validation before submitting it.
+![form UI](./fileUpload/formLogic.png);
+
+
+

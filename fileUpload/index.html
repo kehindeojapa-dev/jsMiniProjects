@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Upload File Page</title>
+</head>
+<body>
+
+    <section class="form-container">
+        <h1>Upload Files</h1>
+        <form>
+            <div class="main-inputs">
+                <div class="inputs-left">
+                    <label for="auth">Authentication Keys</label>
+                    <input type="password" name="auth" id="auth-keys">
+                    <p class="errorText" id="authError"></p>
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                    <p class="errorText" id="titleError"></p>
+                    <label for="description">Description</label>
+                    <textarea name="description" placeholder="Description" id="description"></textarea>
+                </div>
+                <div class="inputs-right">
+                    <label for="tag">Tags (comma separated)</label>
+                    <input type="text" name="tag" id="tag" placeholder="Tags (comma separated)">
+                    <p class="errorText" id="tagError"></p>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date" placeholder="DD/MM/YYYY">
+                    <p class="errorText" id="dateError"></p>
+                    
+                    <label for="software">Software</label>
+                    <select name="software" id="software">
+                        <option value="select">Choose software</option>
+                        <option value="sketch">Sketch</option>
+                        <option value="adobe">Adobe XD</option>
+                        <option value="figma">Figma</option>
+                    </select>
+                    <p class="errorText" id="softwareError"></p>
+                    <div class="file">
+                        <div>
+                            <label for="thumbnail">Thumbnail image</label>
+                            <input type="file" name="thumbnail" id="thumb"> 
+                            <p id="nofile1">No file uploaded</p>
+                            <p class="errorText" id="thumbError"></p>
+                        </div>
+                        <div class="file-right">
+                            <label for="source">Source File</label>
+                            <input type="file" name="source" id="source">    
+                            <p id="nofile2">No file uploaded</p>
+                        <p class="errorText" id="sourceError"></p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
