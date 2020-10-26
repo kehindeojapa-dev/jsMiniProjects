@@ -56,6 +56,7 @@ todoList.addEventListener('click', checked);
 function getDate() {
     let today = new Date;
     let day = today.getDay();
+    let date = today.getDate();
     let month = today.getMonth();
     let year = today.getFullYear();
     let TodayDay;
@@ -124,7 +125,7 @@ function getDate() {
             todayMonth = 'December'
         break;
     }
-    return `${TodayDay},${todayMonth} ${day}, ${year}`;
+    return `${TodayDay},${todayMonth} ${date}, ${year}`;
 }
 
 
