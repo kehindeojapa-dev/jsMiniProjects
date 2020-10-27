@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, cursive, sans-serif;
+    background-color: rgb(19, 16, 32);
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(59, 56, 59);
+}
+
+button:focus {
+    outline: none;
+}
+
+.fas {
+    color: rgb(121, 117, 117);
+}
+
+#open {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.3rem 0.5rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#open .fas {
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    background: #fff;
+    width: 400px;
+    transform: translateX(-150%);
+    transition: transform 0.5s ease;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+#close {
+    position: absolute;
+    top: 1rem;
+    right: -2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+#hello {
+    background: rgb(22, 37, 70);
+    padding: 1rem 2rem 0.8rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#hello a {
+    color: #fff;
+}
+
+.helloUser {
+    color: #fff;
+    background: none;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.navbar h3,h4 {
+    padding: 1.5rem 2rem 1rem;
+}
+.navbar nav {
+    height: 100vh;
+    overflow-y: scroll;
+}
+.navbar nav li {
+    padding: 1rem 2rem 1rem; 
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+#hr {
+    margin-top: 1.5rem;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    right: 1.3rem;
+}
+.fa-arrow-left {
+    padding-right: 1rem;
+}
+
+nav.amazonMusic h3 {
+    padding: 1rem 2rem 0.5rem;
+}
+nav.amazonMusic li {
+    padding: 0.5rem 2rem 0.5rem;
+}
+
+.off-display {
+    display: none;
+}
