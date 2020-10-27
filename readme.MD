@@ -48,4 +48,10 @@ Simple form that uploads file plus checks for some validation before submitting 
 ![form UI](./fileUpload/formLogic.png);
 
 
+## Amazon Navbar
+
+This is a remake of amazon website navbar.
+![navbar UI](./navbar2/amazon-navbar.png);
+
+
 
