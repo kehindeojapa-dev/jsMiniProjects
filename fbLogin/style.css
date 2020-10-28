@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --fbColor: rgb(36, 69, 216);
+}
+body {
+    background-color: #eee;
+    font-family: Tahoma,sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hide {
+    /* display: none; */
+    transform: translateY(100vh);
+}
+
+.active {
+    transform: translateY(0px);
+}
+.loginContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.5rem;
+    /* align-items: center; */
+    margin: 20% auto;
+}
+
+#title {
+    font-size: 3.5rem;
+    color: var(--fbColor);
+}
+
+#title ~ p {
+    font-size: 1.7rem;
+}
+
+#second {
+    position: relative;
+    bottom: 3.5rem;
+}
+.loginBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.loginBox input {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    /* outline-color: red; */
+    border: 1px solid rgb(219, 215, 215);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.loginBox input::placeholder {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+#login {
+    width: 100%;
+    padding: 0.6rem;
+    background: var(--fbColor);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#forget {
+    display: block;
+    width: 40%;
+    margin: 0.8rem auto 2.5rem;
+    text-align: center;
+    font-family: inherit;
+    text-decoration: none;
+    color: var(--fbColor);
+}
+
+#create {
+    display: block;
+    width: 56%;
+    margin: 0 auto;
+    padding: 0.8rem;
+    background-color: rgb(27, 196, 27);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 550;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+#create:hover {
+    background: rgb(36, 151, 36);
+}
+#create:focus, #login:focus {
+    outline: none;
+}
+p#cPage {
+    padding: 1.3rem;
+    text-align: center;
+}
+
+#page a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.signInContainer {
+    position: fixed;
+    width: 450px;
+    margin: auto auto 3rem;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    top: 0; bottom: 0; right: 0; left: 0;
+    padding: 2rem 1rem;
+    transition: transform 1s ease;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    background: transparent;
+    cursor: pointer;
+}
+#closeBtn:focus {
+    outline: none;
+}
+
+
+#line {
+    margin: 0 -1rem;
+}
+#intro h2 {
+    font-size: 1.8rem;
+}
+#intro p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 0.8rem;
+}
+
+.signForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.signForm #names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 2rem; */
+    margin: 0.8rem 0;
+    padding-right: 0rem;
+}
+
+.signForm #names input {
+    padding: 0.7rem;
+}
+.signForm input {
+    padding: 0.7rem;
+    width: 100%;
+}
+.name {
+    position: relative;
+}
+
+.surname {
+    margin-left: 0.7rem;
+}
+
+#span {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+#span2 {
+    position: absolute;
+    right: 1rem;
+    top: -0.2rem;
+}
+
+#span3 {
+    position: absolute;
+    right: 1rem;
+    top: 0.2rem;
+}
+
+.birth p {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.fallbackDatePicker > div{
+    /* outline: 1px solid red; */
+    width: 31%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 0.4rem;
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.fallbackDatePicker > div select{
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.introGender p {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.fa-exclamation-circle {
+    color: red;
+}
+
+.genders {
+    display: flex;
+    flex-direction: row;
+}
+
+.genders > div {
+    outline: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding-left: 0.4rem;
+}
+.genders > div label{
+    margin-top: 0.3rem;
+}
+
+.genders > div input{
+    margin-top: 0.5rem;
+}
+
+#customGender {
+    margin-top: 1rem;
+}
+
+#signUp {
+    width: 40%;
+    margin: 1rem auto;
+    padding: 0.6rem;
+    border: none;
+    background: rgb(27, 196, 27);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+#signUp:focus {
+    outline: none;
+}
+
+#signUp:hover {
+    background: rgb(36, 151, 36);
+}
+

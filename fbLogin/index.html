@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook: Login</title>
+</head>
+<body>
+    <section class="loginContainer">
+        <div id="first">
+            <h2 id="title">facebook</h2>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div id="second">
+            <div class="loginBox">
+                <form action="">
+                    <input type="text" placeholder="Email address or phone number" id="userId">
+                    <input type="password" placeholder="Password" id="password">
+                    <button type="submit" id="login">Log in</button>
+    
+                    <a href="#" id="forget">Forgotten password?</a>
+    
+                    <button id="create">Create New Account</button>
+                </form>
+            </div>
+            <p id="cPage"><span id="page"><a href="#">Create a page</a></span> for a celebrity, band or business</p>
+        </div>
+        
+    </section>
+
+
+    <section class="signInContainer hide">
+        <button id="closeBtn"><i class="fas fa-times"></i></button>
+        <div id="intro">
+            <h2>Sign Up</h2>
+            <p>It's quick and easy</p>
+            <hr id="line">
+        </div>
+        <div>
+            <form action="" class="signForm">
+                <div id="names">
+                    <div class="name">
+                        <input type="text" name="firstname" placeholder="First name" id="firstname" >
+                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <div class="name surname">
+                        <input type="text" name="surname" placeholder="Surname" id="surname">
+                        <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    
+                </div>
+                <div class="name">
+                    <input type="text" placeholder="Mobile number or email address" id="mobileEmail">
+                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                </div>
+                <div class="name">
+                    <input type="password" name="password" placeholder="New password" id="newPassword">
+                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                </div>
+
+                <!-- Date Picker -->
+                <div class="name birth">
+                    <p>Date of birth<i class="fas fa-question-circle"></i></p>
+                    <span id="span2"><i class="fas fa-exclamation-circle"></i></span>  
+                </div>
+                              
+                <div class="fallbackDatePicker">
+                    <div>
+                      <select id="day" name="day">
+                      </select>
+                    </div>
+                    <div>
+                      
+                      <select id="month" name="month">
+                        <option value="month">Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select id="year" name="year">
+                          <option value="year">Year</option>
+                      </select>
+                    </div>
+                  </div>
+
+                
+                  <div class="name introGender">
+                    <p>Gender<i class="fas fa-question"></i></p>
+                    <span id="span3"><i class="fas fa-exclamation-circle"></i></span>
+                  </div>
+                <div class="genders">
+                    <div>
+                        <label for="female">Female</label>
+                        <input type="radio" name="Gender" id="feale" value="female">
+                    </div>
+                    
+                    <div>
+                        <label for="male">Male</label>
+                        <input type="radio" name="Gender" id="male" value="male">
+                    </div>
+
+                    <div>
+                        <label for="custom">Custom</label>
+                        <input type="radio" name="Gender" id="custom" value="male">
+                    </div>
+
+                    
+                </div>
+
+                <input type="text" name="optional" id="customGender" placeholder="Gender(optional)">
+
+                <button type="submit" id="signUp">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+        
+        
+
+
+    <div class="spacer">
+        
+    </div>
+    <script src="./datepicker.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
