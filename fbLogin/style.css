@@ -11,15 +11,19 @@ body {
     font-family: Tahoma,sans-serif;
     height: 100vh;
     overflow: hidden;
+    /* display: none; */
 }
 
 .hide {
     /* display: none; */
     transform: translateY(100vh);
 }
+.hide2 {
+    transform: translateY(-100%);
+}
 
 .active {
-    transform: translateY(0px);
+    transform: translateY(0%);
 }
 .loginContainer {
     width: 80%;
@@ -65,6 +69,11 @@ body {
     border-radius: 5px;
 }
 
+.loginBox input:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
 .loginBox input::placeholder {
     padding-left: 0.5rem;
     font-size: 1rem;
@@ -80,6 +89,10 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
+    /* transition: background 0.1s ease; */
+}
+#login:hover {
+    background: rgb(87, 103, 175);
 }
 
 #forget {
@@ -282,7 +295,7 @@ input {
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.4s ease;
+    /* transition: background 0.4s ease; */
 }
 
 #signUp:focus {
@@ -291,5 +304,29 @@ input {
 
 #signUp:hover {
     background: rgb(36, 151, 36);
+}
+
+#welcome{
+    position: fixed;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    top: 0;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.off-display{
+    display: none;
+}
+
+.loginError {
+    background: rgba(248, 24, 8, 0.4);
+    color: red;
+    text-align: center;
+    padding: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
 }
 
