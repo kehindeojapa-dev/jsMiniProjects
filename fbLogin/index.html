@@ -48,27 +48,27 @@
                 <div id="names">
                     <div class="name">
                         <input type="text" name="firstname" placeholder="First name" id="firstname" >
-                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                        <span id="span" class="fnameDanger off-display"><i class="fas fa-exclamation-circle"></i></span>
                     </div>
                     <div class="name surname">
                         <input type="text" name="surname" placeholder="Surname" id="surname">
-                        <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                        <span id="span" class="surnameDanger off-display"><i class="fas fa-exclamation-circle"></i></span>
                     </div>
                     
                 </div>
                 <div class="name">
                     <input type="text" placeholder="Mobile number or email address" id="mobileEmail">
-                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                    <span id="span" class="emailNoDanger off-display"><i class="fas fa-exclamation-circle"></i></span>
                 </div>
                 <div class="name">
                     <input type="password" name="password" placeholder="New password" id="newPassword">
-                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                    <span id="span" class="newPwdDanger off-display"><i class="fas fa-exclamation-circle"></i></span>
                 </div>
 
                 <!-- Date Picker -->
                 <div class="name birth">
                     <p>Date of birth<i class="fas fa-question-circle"></i></p>
-                    <span id="span2"><i class="fas fa-exclamation-circle"></i></span>  
+                    <span id="span2" class="dobDanger off-display"><i class="fas fa-exclamation-circle"></i></span>  
                 </div>
                               
                 <div class="fallbackDatePicker">
@@ -104,7 +104,7 @@
                 
                   <div class="name introGender">
                     <p>Gender<i class="fas fa-question"></i></p>
-                    <span id="span3"><i class="fas fa-exclamation-circle"></i></span>
+                    <span id="span3" class="genderDanger off-display"><i class="fas fa-exclamation-circle"></i></span>
                   </div>
                 <div class="genders">
                     <div>
@@ -119,13 +119,13 @@
 
                     <div>
                         <label for="custom">Custom</label>
-                        <input type="radio" name="Gender" id="custom" value="male">
+                        <input type="radio" name="Gender" id="custom" value="custom">
                     </div>
 
                     
                 </div>
 
-                <input type="text" name="optional" id="customGender" placeholder="Gender(optional)">
+                <input type="text" name="optional" id="customGender" class="off-display" placeholder="Gender(optional)">
 
                 <button type="submit" id="signUp">Sign Up</button>
             </form>
