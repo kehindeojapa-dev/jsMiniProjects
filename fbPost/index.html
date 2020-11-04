@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../fontawesome/all.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./slider.css">
     <title>Fb: Make Post</title>
 </head>
 <body>
@@ -59,7 +60,7 @@
                     <button id="comment2Btn"><i class="fas fa-comment">reply</i></button>
                 </div>
             </div>
-            <div class="create-comment">
+            <div class="create-comment reply">
                 <form action="">
                     <textarea name="comment" id="replyBox"></textarea>
                     <button type="submit">reply</button>
@@ -79,13 +80,32 @@
 
 <!-- Can show uploaded image due to security reason. So the post images and sliders are handcoded -->
     <div class="postImages">
-        <img src="./images/post1.jpg" alt="">
-        <img src="./images/post2.jpg" alt="">
-        <img src="./images/post3.jpg" alt="">
-        <img src="./images/post4.jpg" alt="">
-        <img src="./images/post5.jpg" alt="">
-        <img src="./images/post6.jpg" alt="">
+        
     </div>
+    <section class="carouselContainer">
+        <div>
+            <button id="closeBtn">X</button>
+        </div>
+        <div>
+            <button class="leftBtn"><i class="fas fa-chevron-left"></i></button>
+        </div>
+        
+        <div class="carousel">
+            <div class="image-container">
+                <img src="./images/post1.jpg" alt="">
+                <img src="./images/post2.jpg" alt="">
+                <img src="./images/post3.jpg" alt="">
+                <img src="./images/post4.jpg" alt="">
+                <img src="./images/post5.jpg" alt="">
+                <img src="./images/post6.jpg" alt="">
+            </div>
+        </div>
+        
+        <div>
+            <button class="rightBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
     <script src="./app.js"></script>
+    <script src="./slider.js"></script>
 </body>
 </html>

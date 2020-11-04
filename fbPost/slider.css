@@ -1,0 +1,67 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5rem;
+    
+}
+
+.carousel {
+    height: 400px;
+    width: 400px;
+    outline: 2px solid var(--color1);
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.3s linear;
+}
+
+.image-container img {
+    object-fit: fill;
+    height: 400px;
+    width: 400px;
+}
+
+.carouselContainer button {
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: var(--color3);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 2rem;
+    color: #111;
+}
+
+.carouselContainer #closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: crimson;
+    padding: 0.2rem 0.5rem;
+    transition: background-color 0.2s ease-in;
+}
+
+.carouselContainer #closeBtn:hover {
+    background-color: #eee;
+}
+
+.carouselContainer button:focus {
+    outline: none;
+}
+
+.carouselContainer button:hover {
+    background-color: var(--color1);
+}
+
+.hide {
+    display: none;
+}

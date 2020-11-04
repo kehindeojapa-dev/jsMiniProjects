@@ -77,4 +77,6 @@ Simple remake of facebook login/signup page.
 
 ## Facebook post
 
-similar rendition of facebook make-post feature.
+similar rendition of facebook make-post feature. can add post, upload images(note: this images can't be loaded due to obvious security reason), comments can be made, liked or disliked.
+
+![post UI](./fbPost/fb-post.png);

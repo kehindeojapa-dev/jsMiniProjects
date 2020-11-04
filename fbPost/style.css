@@ -36,6 +36,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .addPost-container .user {
@@ -98,6 +99,7 @@ input:focus {
     width: 400px;
     background-color: #fff;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 1rem 0rem 1rem;
 }
 .post-content {
     position: relative;
@@ -130,6 +132,7 @@ input:focus {
 .post-content p {
     margin: 0.5rem;
     text-align: justify;
+    font-size: 1.3rem;
 }
 
 .post-engage {
@@ -143,19 +146,17 @@ input:focus {
 .post-engage button {
     width: 100%;
     padding: 0.4rem;
-    background: #ddd;
+    background: rgb(243, 241, 241);
     border: none;
     font-size: 0.9rem;
 }
 .post-engage button.likeBtn:hover {
     opacity: 0.8;
-    background: var(--fbColor);
-    color: #ddd;
+    background: rgb(155, 146, 146);
 }
 .post-engage button.dislikeBtn:hover {
     opacity: 0.8;
-    color: #ddd;
-    background: rgb(240, 108, 108);
+    background: rgb(155, 146, 146);
 }
 .post-engage button.commentBtn:hover {
     opacity: 0.8;
@@ -177,7 +178,8 @@ input:focus {
     width: 100%;
     height: 60px;
     padding: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
+    resize: none;
 }
 .create-comment form textarea:focus {
     outline: none;
@@ -213,7 +215,7 @@ input:focus {
 }
 
 .main-comment p {
-    margin: 0.3rem 1rem 0rem;
+    margin: 0.3rem 2rem 0rem;
     justify-content: center;
     background: #ddd;
     border-radius: 5px;
@@ -222,7 +224,8 @@ input:focus {
 }
 
 .post-comment button {
-    background-color: #aaa;
+    background: rgb(243, 241, 241);
+
     padding: 0.2rem;
 }
 .post-comment button#comment2Btn:hover {
@@ -232,7 +235,7 @@ input:focus {
 }
 
 .post-engage2 {
-    margin: 0rem 1rem 0.3rem;
+    margin: 0rem 3rem 0.3rem;
 }
 
 .replyComment {
@@ -246,4 +249,11 @@ input:focus {
 
 .postImages {
     display: none;
+}
+
+.like {
+    color: var(--fbColor);
+}
+.dislike {
+    color: rgb(199, 36, 24);
 }
