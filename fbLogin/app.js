@@ -89,6 +89,7 @@ loginForm.addEventListener('submit', (e)=> {
         welcome.classList.remove('hide2');
         setTimeout(()=> {
             welcome.classList.add('hide2');
+            window.location = '../fbPost/index.html';
             userId.value = '';
             userPwd.value = '';
         }, 2000)
@@ -362,6 +363,7 @@ signForm.addEventListener('submit', (e)=>{
         welcome.classList.remove('hide2');
         setTimeout(()=> {
             welcome.classList.add('hide2');
+            window.location = '../fbPost/index.html';
         }, 3000);
         firstName.value = '';
         surname.value = '';

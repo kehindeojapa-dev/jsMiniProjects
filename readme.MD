@@ -70,7 +70,7 @@ This is a remake of amazon website navbar.
 
 ## Facebook login/signup
 
-Simple remake of facebook login/signup page.
+Simple remake of facebook login/signup page. after completion of the login/signup, it takes you to the make-post page.
 
 ![login/signup UI](./fbLogin/fbLoginSignup.png);
 
