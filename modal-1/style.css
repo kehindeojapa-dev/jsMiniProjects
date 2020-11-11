@@ -111,3 +111,23 @@ body {
 }
 
 
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+
+@media (max-width: 780px) {
+    .modal {
+        width: 80%;
+        margin-left: 0rem;
+        margin: 0 auto 0 2rem;
+        position: relative;
+    }
+    .close_btn {
+        position: absolute;
+        top: 1.2rem;
+        right: 0.5rem;
+    }
+}

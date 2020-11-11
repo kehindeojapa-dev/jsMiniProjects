@@ -28,6 +28,7 @@ body {
     padding-left: 4rem;
     padding-right: 4rem;
     position: relative;
+    top: 1rem;
 }
 
 .modal h3, .modal p, .modal h5 {
@@ -111,6 +112,7 @@ textarea::placeholder {
     height: 40px;
     cursor: pointer;
     transition: background 0.4s;
+    border-radius: 5px;
 }
 .close_btn_container:hover {
     background: #5454aa;
@@ -140,4 +142,24 @@ textarea::placeholder {
     background: inherit;
     transform: rotate(90deg);
     cursor: pointer;
+}
+
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+
+@media (max-width: 780px) {
+    .modal {
+        width: 50%;
+    }
+    textarea {
+        width: 100%;
+    }
+    .modal button {
+        width: 60%;
+    }
 }

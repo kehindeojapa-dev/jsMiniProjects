@@ -23,7 +23,7 @@ body {
 }
 
 .todoApp {
-    width: 30%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -157,4 +157,17 @@ button.to-do-submit:focus {
 .complete {
     text-decoration: line-through;
     opacity: 0.5;
+}
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+
+@media (max-width: 780px) {
+    .todoApp {
+        width: 90%;
+    }
 }

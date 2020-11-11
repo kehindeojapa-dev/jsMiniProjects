@@ -152,3 +152,22 @@ header h2 {
 .popup #close:focus {
     outline: none;
 }
+
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+
+@media (max-width: 780px) {
+    .popup img {
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        height: 500px;
+        width: 90%;
+    }
+}
+

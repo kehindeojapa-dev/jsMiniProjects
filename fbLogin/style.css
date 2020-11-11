@@ -342,3 +342,27 @@ input {
 }
 
 
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+@media (max-width: 435px) {
+    .signInContainer {
+        width: 100vw;
+    }
+    .fallbackDatePicker > div{
+        width: 30%;
+        margin-right: 0.4rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .loginContainer {
+        grid-template-columns: 1fr;
+        margin: 3% auto;
+        gap: 5rem;
+        overflow-y: scroll;
+    }
+}

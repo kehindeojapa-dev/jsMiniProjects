@@ -149,3 +149,32 @@ input[type="file"]{
     width: 80%;
     margin: 0 -0rem;
 }
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+
+@media (max-width: 450px) {
+    .inputs-left {
+        margin: 0 1rem 0 auto;
+        /* margin-right: auto; */
+    }
+    .inputs-right input{
+        width: 90%;
+    }
+    select {
+        width: 90%;
+    }
+    .file {
+        width: 100%;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 615px) {
+    .file {
+        width: 90%;
+    }
+}

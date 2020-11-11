@@ -74,3 +74,31 @@ button:hover {
     border-bottom-right-radius: 100%;
 }
 
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+/* @media (min-width: 781px) and (max-width: 960px) { */
+
+@media (max-width: 509px) {
+    .carousel {
+        width: 300px;
+    }
+    img {
+        object-fit: fill;
+        width: 300px;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 780px) {
+    .carousel {
+        width: 400px;
+    }
+    img {
+        object-fit: contain;
+        width: 400px;
+    }
+}

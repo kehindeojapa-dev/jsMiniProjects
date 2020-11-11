@@ -39,7 +39,7 @@ main img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
 }
 .active {
@@ -55,7 +55,7 @@ main img {
 .popup img {
     /* object-fit: fill; */
     height: 500px;
-    width: 600px;
+    width: auto;
 }
 
 .popup #close {
@@ -77,3 +77,29 @@ main img {
 .popup #close:focus {
     outline: none;
 }
+
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    .popup {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .popup img {
+        object-fit: fill;
+        height: auto;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+

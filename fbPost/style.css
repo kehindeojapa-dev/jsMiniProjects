@@ -131,8 +131,9 @@ input:focus {
 }
 .post-content p {
     margin: 0.5rem;
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
+    overflow-wrap: break-word;
 }
 
 .post-engage {
@@ -256,4 +257,25 @@ input:focus {
 }
 .dislike {
     color: rgb(199, 36, 24);
+}
+
+
+/*                                                                          \*
+            ===================================================
+                    MAX WIDTH: 780PX(SMALL SCREENS)
+            ===================================================
+\*                                                                          */
+/* @media (max-width: 435px) {
+    
+} */
+
+
+@media (max-width: 650px) {
+   
+    .addPost-container {
+        width: 90vw;
+    }
+    .post {
+        width: 90vw;
+    }
 }
