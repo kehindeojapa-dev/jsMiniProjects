@@ -1,7 +1,9 @@
 # JavaScript Mini Projects
 
     This repo contains mini projects like modals, todo-List, carousels, gallery, converters UI, etc: just mini components of a modern site created using HTML, CSS and most especially JavaScript.
-    [view live demo at ](https://kehindeojapa-dev.github.io/jsMiniProjects).
+[see live demo](https://kehindeojapa-dev.github.io/jsMiniProjects).
+
+https://kehindeojapa-dev.github.io/jsMiniProjects
 
 #### List of Projects
 
